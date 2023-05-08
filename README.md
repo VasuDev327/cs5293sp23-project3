@@ -36,6 +36,13 @@ Thereby TOPIC IDS are added.
 Now, the required data is stored in the .tsv file, the output of it looks as follows:\
 ![image](https://user-images.githubusercontent.com/102677891/236915893-929ce827-b4ad-4bd8-8d95-54f194feb56c.png)
 
-
-
+### Step 6:
+The same preprocessing has to happen in the project3.py when a new city.pdf file is read, post that the saved model is used. Which is shown as below:
+```
+with open('model.pkl', 'rb') as file:
+    loaded_model, loaded_vectorizer = pickle.load(file)
+with open('LDA model.pkl', 'rb') as f:
+    lda_loaded, vectorizer_loaded_l = pickle.load(f)
+```
+Through these the new data will be predicted. So the predicted data will generate the output as follows and also saves the complete format in the .tsv file format.
 
