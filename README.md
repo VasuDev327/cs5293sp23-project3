@@ -21,4 +21,21 @@ However, there is a drawback to this approach which will be discussed under the 
 After performing normalization, attempts were made to apply Ngrams to the data, but it did not seem to have any effect on the dataframe, and as a result, it was ignored.
 
 ### Step 3:
-Experimenting with clustering models. Tried different models. The following is the samepl expected table.
+Explored various clustering models and tested them with the data. Below is a sample of the graph and expected table.
+![image](https://user-images.githubusercontent.com/102677891/236914745-0a2d6097-5d35-4c0a-bf5e-a4c8f7b83dec.png)\
+![image](https://user-images.githubusercontent.com/102677891/236914789-3029a954-9b40-4a6e-b920-ee2f96ca19eb.png)\
+![image](https://user-images.githubusercontent.com/102677891/236914840-578d59c7-66d1-4a8f-ad87-a1f2180ed62b.png)
+### Step 4:
+The cluster ID has been saved based on the chosen value of k for the clustering model. For this project, k was chosen to be 2 based on the elbow method.
+
+### Step 5:
+Here the trained model has been saved in a pickle form, which is used in the project3.py file when a new city.pdf file is reading.
+Then the themes are explored. Also, stored in the pickle format, to further use it in the proejct3.py.
+Thereby TOPIC IDS are added.
+
+Now, the required data is stored in the .tsv file, the output of it looks as follows:\
+![image](https://user-images.githubusercontent.com/102677891/236915893-929ce827-b4ad-4bd8-8d95-54f194feb56c.png)
+
+
+
+
