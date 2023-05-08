@@ -1,7 +1,8 @@
-from project3 import normalize_corpus, extract_text_function
+from project3 import normalize_corpus, extract_text_function, smart_city_slicker
 import pandas as pd
 import numpy as np
 import pytest
+
 
 text = ""
 def test_extract_text_function():

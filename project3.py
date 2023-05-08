@@ -1,26 +1,24 @@
 import os
-import PyPDF2
-
 from pypdf import PdfReader
-
-
 import re 
-
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
-
 import matplotlib.pyplot as plt
 import pickle
 from pathlib import Path
-
-
 import argparse
-
 from pypdf import PdfReader
 import os
 import re
 import pandas as pd
+import nltk
+import spacy
+import unicodedata
+import re
+from nltk.corpus import wordnet
+from nltk.tokenize.toktok import ToktokTokenizer
+from bs4 import BeautifulSoup
 
 def extract_text_function(filename):
     if filename.endswith(".pdf"):
@@ -169,17 +167,6 @@ CONTRACTION_MAP = {
 "you've": "you have"
 }
 
-import nltk
-import spacy
-import unicodedata
-# from contractions import CONTRACTION_MAP
-import re
-from nltk.corpus import wordnet
-import collections
-#from textblob import Word
-from nltk.tokenize.toktok import ToktokTokenizer
-from bs4 import BeautifulSoup
-
 custom_stopwords = ['city', 'smart', 'cities', 'states', 'page','US','transportation', 'vehicles', 'vehicle']
 tokenizer = ToktokTokenizer()
 nlp = spacy.load("en_core_web_md")
@@ -282,9 +269,12 @@ def smart_city_slicker(argument):
     city_name = []
     state_name = []
     for f in filename:
+        print(f)
         text_between = f[:f.find(".pdf")]
         state = text_between.split()[0]
         city = text_between.split()[1]
+        print(state)
+        print(city)
         state_name.append(state)
         city_name.append(city)
     raw_text = []
