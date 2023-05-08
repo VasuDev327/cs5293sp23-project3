@@ -63,7 +63,7 @@ Now, the required data is stored in the .tsv file, the output of it looks as fol
 ![image](https://user-images.githubusercontent.com/102677891/236915893-929ce827-b4ad-4bd8-8d95-54f194feb56c.png)
 
 ### Step 6:
-The args will be passed
+The args will be passed as follows in the project3.py
 ![image](https://user-images.githubusercontent.com/102677891/236917702-eb488987-9f7d-4dd3-b1bf-089a1416e778.png)
 
 ### Step 7:
