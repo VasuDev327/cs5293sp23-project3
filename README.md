@@ -78,4 +78,9 @@ Through these the new data will be predicted. So the predicted data will generat
 ## Output:
 ![image](https://user-images.githubusercontent.com/102677891/236917039-845a3b92-30e0-4814-9c72-55c519872287.png)
 
+## Pytest
+The test is done on the following functions, which successfully processed the data.
+
+###Output:
+![image](https://user-images.githubusercontent.com/102677891/236918264-bb3763d7-4c48-4c90-93c5-80ae561a9855.png)
 
