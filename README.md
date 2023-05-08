@@ -66,7 +66,6 @@ Now, the required data is stored in the .tsv file, the output of it looks as fol
 The args will be passed
 ![image](https://user-images.githubusercontent.com/102677891/236917702-eb488987-9f7d-4dd3-b1bf-089a1416e778.png)
 
-
 ### Step 7:
 The same preprocessing has to happen in the project3.py when a new city.pdf file is read, post that the saved model is used. Which is shown as below:
 ```
