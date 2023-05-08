@@ -7,6 +7,32 @@ Initially, a model was developed using Jupyter Notebook in this project.\
 Subsequently, this model was utilized in the .py file to make predictions for the new .pdf file.\
 The output of this process is a .tsv file.\
 
+### Used libraries
+```
+import os
+from pypdf import PdfReader
+import re 
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+import pickle
+from pathlib import Path
+import argparse
+from pypdf import PdfReader
+import os
+import re
+import pandas as pd
+import nltk
+import spacy
+import unicodedata
+import re
+from nltk.corpus import wordnet
+from nltk.tokenize.toktok import ToktokTokenizer
+from bs4 import BeautifulSoup
+```
+
+
 ### Step 1:
 To start the project, all the 71 files available in the instructor's Git repository were downloaded, which included both .doc and .pdf files.\
 However, only the pdf files were considered for this project.\
@@ -37,6 +63,11 @@ Now, the required data is stored in the .tsv file, the output of it looks as fol
 ![image](https://user-images.githubusercontent.com/102677891/236915893-929ce827-b4ad-4bd8-8d95-54f194feb56c.png)
 
 ### Step 6:
+The args will be passed
+![image](https://user-images.githubusercontent.com/102677891/236917702-eb488987-9f7d-4dd3-b1bf-089a1416e778.png)
+
+
+### Step 7:
 The same preprocessing has to happen in the project3.py when a new city.pdf file is read, post that the saved model is used. Which is shown as below:
 ```
 with open('model.pkl', 'rb') as file:
@@ -47,4 +78,5 @@ with open('LDA model.pkl', 'rb') as f:
 Through these the new data will be predicted. So the predicted data will generate the output as follows and also saves the complete format in the .tsv file format.
 ## Output:
 ![image](https://user-images.githubusercontent.com/102677891/236917039-845a3b92-30e0-4814-9c72-55c519872287.png)
+
 
