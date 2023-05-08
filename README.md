@@ -45,4 +45,6 @@ with open('LDA model.pkl', 'rb') as f:
     lda_loaded, vectorizer_loaded_l = pickle.load(f)
 ```
 Through these the new data will be predicted. So the predicted data will generate the output as follows and also saves the complete format in the .tsv file format.
+## Output:
+![image](https://user-images.githubusercontent.com/102677891/236917039-845a3b92-30e0-4814-9c72-55c519872287.png)
 
