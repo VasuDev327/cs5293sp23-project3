@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+pypdf2 = "*"
+requests = "*"
+scikit-learn = "*"
+matplotlib = "*"
+pypdf = "*"
+nltk = "*"
+bs4 = "*"
+spacy = "*"
+en-core-web-md = {file = "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.2.0/en_core_web_md-3.2.0-py3-none-any.whl"}
+kneed = "*"
+pytest = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.10"
